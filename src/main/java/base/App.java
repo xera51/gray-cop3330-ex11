@@ -34,7 +34,7 @@ public class App {
     }
 
     private double calculateNumUsd(double euros, double rate) {
-        return Math.round(100 * euros * rate) / 100.0;
+        return Math.ceil(100 * euros * rate) / 100.0;
     }
 
     public String generateOutputString(double euros, double rate, double usd) {
